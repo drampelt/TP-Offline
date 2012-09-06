@@ -1,0 +1,20 @@
+author: Daniel
+database: false
+description: Teleport to offline players.
+generator: http://dinnerbone.com/minecraft/tools/pluginator/
+main: ca.drmc.tpoffline.TPOffline
+name: TPOffline
+startup: postworld
+version: '1.0'
+commands:
+    tpoffline:
+        description: Buy or sell emeralds
+        usage: /tpoffline <player>
+permissions:
+    tpoffline.*:
+        description: Access to all tpoffline commands
+        children:
+            tpoffline.tp: true
+    tpoffline.tp:
+        description: Access to /tpoffline
+        default: op
