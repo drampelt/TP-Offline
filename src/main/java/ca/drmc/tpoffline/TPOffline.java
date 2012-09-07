@@ -15,7 +15,7 @@ public class TPOffline extends JavaPlugin implements Listener {
 	private static final Logger log = Logger.getLogger("Minecraft");
 	
     public void onDisable() {
-        // TODO: Place any custom disable code here.
+    	log.info(String.format("[%s] - Disabled!", getDescription().getName()));
     }
 
     public void onEnable() {
